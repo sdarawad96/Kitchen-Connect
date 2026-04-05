@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit a Recipe</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="logo.PNG" alt="Kitchen Connect Logo">
+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="submit.html">Submit</a>
+        <a href="about.html">About</a>
+    </nav>  
+
+    <div class="account">Account</div>
+</header>
+<main>
+    <h1>Submit a Recipe</h1>
+
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="title">Dish Title</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="prep">Prep Time</label>
+        <input type="text" id="prep" name="prep" required>
+
+        <label for="servings">Number of Servings</label>
+        <input type="text" id="servings" name="servings" required>
+
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+        <label for="directions">Directions</label>
+        <textarea id="directions" name="directions" rows="6" required></textarea>
+
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" name="image">
+
+        <button type="submit">Submit Recipe</button>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2026 Kitchen Connect</p>
+        <p>Email: <a href="mailto:SondusDarawad@email.com">SondusDarawad@email.com</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
