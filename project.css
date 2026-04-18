@@ -199,6 +199,18 @@ button {
 button:hover {
     background-color: orange;
 }
+input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: darkorange;
+  background-color: #fff3e0;
+}
 
 /* ================= FEATURED LAYOUT ================= */
 .featured-layout {
@@ -230,6 +242,20 @@ button:hover {
     margin-bottom: 10px;
     line-height: 1.4;
 }
+
+.gallery {
+display: flex;
+gap: 100px;
+justify-content: center;
+lex-wrap: wrap;
+}
+
+.gallery img {
+width: 100%;
+max-width: 400px;
+border-radius: 10px;
+}
+
 
 
 /* ================= FOOTER ================= */
