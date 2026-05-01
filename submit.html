@@ -8,26 +8,27 @@
 
 <header>
     <div class="logo">
-    <img src="logo.PNG" alt="Kitchen Connect Logo">
-</div>
+        <img src="logo.PNG" alt="Kitchen Connect Logo">
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
         <a href="browse.html">Browse</a>
         <a href="submit.html">Submit</a>
         <a href="about.html">About</a>
-	<a href="products.html">Products</a>
+        <a href="products.html">Products</a>
     </nav>  
 
     <div class="nav-right">
- 	 🛒 <span id="cart-count">0</span>
- 	 <span style="margin-left:15px;">Account</span>
-   </div>
+        🛒 <span id="cart-count">0</span>
+        <span style="margin-left:15px;">Account</span>
+    </div>
 </header>
+
 <main>
     <h1>Submit a Recipe</h1>
 
-    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return submitRecipe()">
 
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -63,6 +64,13 @@
         <p>Email: <a href="mailto:SondusDarawad@email.com">SondusDarawad@email.com</a></p>
     </div>
 </footer>
+
+<script>
+function submitRecipe() {
+    alert("Recipe submitted successfully!");
+    return true;
+}
+</script>
 
 </body>
 </html>
